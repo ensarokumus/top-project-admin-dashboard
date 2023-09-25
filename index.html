@@ -8,38 +8,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="search-bar">
-          <img src="" alt="Search icon" class="search-icon icon" />
-          <div class="search-text-box"></div>
-        </div>
-        <div class="user-profile">
-          <img src="" alt="Notification icon" class="profile-icon icon" />
-          <img
-            src=""
-            alt="User's profile picture"
-            class="profile-image-preview"
-          />
-          <p class="user-name">Ensar Okumus</p>
-        </div>
-        <div class="greeting">
-          <img src="" alt="User's profile picture" class="profile-image" />
-          <p class="greeting">Hi there,</p>
-          <p class="user-name-long">Ensar Okumus (@okumuse)</p>
-        </div>
-        <div class="action-buttons">
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
-        </div>
-      </div>
-
-      <div class="side-bar">
+      
+      <div class="sidebar">
+        
         <div class="logo">
-          <img src="" alt="omni app logo" class="dashboard-logo" />
+          <img src="" alt="Dashboard app logo" class="dashboard-logo" />
+          <p>Dashboard</p>
         </div>
-        <div class="dashboard-tabs">
-          <ul class="tabs-main">
+        
+        <div class="nav">
+          <ul class="nav-tabs">
             <div class="tab-home">
               <img src="" />
               <li>Home</li>
@@ -65,7 +43,10 @@
               <li>Communities</li>
             </div>
           </ul>
-          <ul class="tabs-settings">
+        </div>
+        
+        <div class="config">
+          <ul class="config-tabs">
             <div class="tab-settings">
               <img src="" />
               <li>Settings</li>
@@ -80,19 +61,57 @@
             </div>
           </ul>
         </div>
+
+      </div>
+
+      <div class="header">
+        
+        <div class="search">
+          <form action="#" method="get">
+            <input type="button" value="Search" id="search-bar">
+            <label for="search-bar" hidden>Enter your search phrase:</label>
+            <input type="text" id="search-bar" name="search-bar">
+          </form>
+        </div>
+        
+        <div class="user-profile">
+          <img src="" alt="Notification icon" class="profile-icon icon" />
+          <img
+            src=""
+            alt="User's profile picture"
+            class="profile-image-preview"
+          />
+          <p class="user-name">Ensar Okumus</p>
+        </div>
+        
+        <div class="greeting">
+          <img src="" alt="User's profile picture" class="profile-image" />
+          <p class="greeting">Hi there,</p>
+          <p class="user-name-long">Ensar Okumus (@okumuse)</p>
+        </div>
+        
+        <div class="action-buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+
       </div>
 
       <div class="dashboard">
+        
         <div class="project">
           <h1>Your Projects</h1>
           <div class="project-cards">
             <div class="card">
               <div class="card-main">
-                <h2>Super Cool Project</h2>
-                <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
-                  nibh erat, id facilisis felis accumsan nec.
-                </p>
+                  <div class="card-text">
+                    <h2>Super Cool Project</h2>
+                    <p>
+                      Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                      nibh erat, id facilisis felis accumsan nec.
+                    </p>
+                  </div>
                 <div class="card-actions">
                   <img src="" alt="Favourite icon" class="fav" />
                   <img src="" alt="Follow icon" class="follow" />
@@ -102,13 +121,15 @@
             </div>
             <div class="card">
               <div class="card-main">
-                <h2>Less Cool Project</h2>
-                <p>
-                  Nullam condimentum ipsum ut lectus vehicula consectetur.
-                  Quisque sed dolor tincidunt, consectetur sapien et, facilisis
-                  dolor. Duis sem purus, dignissim ut sapien in, varius
-                  pellentesque lacus.
-                </p>
+                <div class="card-text">
+                  <h2>Less Cool Project</h2>
+                  <p>
+                    Nullam condimentum ipsum ut lectus vehicula consectetur.
+                    Quisque sed dolor tincidunt, consectetur sapien et, facilisis
+                    dolor. Duis sem purus, dignissim ut sapien in, varius
+                    pellentesque lacus.
+                  </p>
+                </div>
                 <div class="card-actions">
                   <img src="" alt="Favourite icon" class="fav" />
                   <img src="" alt="Follow icon" class="follow" />
@@ -118,11 +139,13 @@
             </div>
             <div class="card">
               <div class="card-main">
-                <h2>Impossible App</h2>
-                <p>
-                  In hac habitasse platea dictumst. Vivamus dictum rutrum arcu,
-                  a placerat velit sagittis id.
-                </p>
+                <div class="card-text">
+                  <h2>Impossible App</h2>
+                  <p>
+                    In hac habitasse platea dictumst. Vivamus dictum rutrum arcu,
+                    a placerat velit sagittis id.
+                  </p>
+                </div>
                 <div class="card-actions">
                   <img src="" alt="Favourite icon" class="fav" />
                   <img src="" alt="Follow icon" class="follow" />
@@ -132,12 +155,14 @@
             </div>
             <div class="card">
               <div class="card-main">
-                <h2>Easy Peasy App</h2>
-                <p>
-                  Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
-                  urna get accumsan aliquam. Curabitur dignissim nisi in tortor
-                  commodo, ac bibendum magna tincidunt.
-                </p>
+                <div class="card-text">
+                  <h2>Easy Peasy App</h2>
+                  <p>
+                    Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
+                    urna get accumsan aliquam. Curabitur dignissim nisi in tortor
+                    commodo, ac bibendum magna tincidunt.
+                  </p>
+                </div>
                 <div class="card-actions">
                   <img src="" alt="Favourite icon" class="fav" />
                   <img src="" alt="Follow icon" class="follow" />
@@ -147,11 +172,13 @@
             </div>
             <div class="card">
               <div class="card-main">
-                <h2>Ad Blocker</h2>
-                <p>
-                  Quisque get rutrum nisl. Nam augue justo, cursus vitae metus
-                  vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
-                </p>
+                <div class="card-text">
+                  <h2>Ad Blocker</h2>
+                  <p>
+                    Quisque get rutrum nisl. Nam augue justo, cursus vitae metus
+                    vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
+                  </p>
+                </div>
                 <div class="card-actions">
                   <img src="" alt="Favourite icon" class="fav" />
                   <img src="" alt="Follow icon" class="follow" />
@@ -161,12 +188,14 @@
             </div>
             <div class="card">
               <div class="card-main">
-                <h2>Money Maker</h2>
-                <p>
-                  Present convallis, libero quis congue elementum, nunc ante
-                  faucibus sapien, ac scelerisque tortor purus sit amet ex.
-                  Pellentesque mollis nec sem vel aliquam.
-                </p>
+                <div class="card-text">
+                  <h2>Money Maker</h2>
+                  <p>
+                    Present convallis, libero quis congue elementum, nunc ante
+                    faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                    Pellentesque mollis nec sem vel aliquam.
+                  </p>
+                </div>
                 <div class="card-actions">
                   <img src="" alt="Favourite icon" class="fav" />
                   <img src="" alt="Follow icon" class="follow" />
@@ -243,6 +272,7 @@
             <p class="project-tag">No Traffic Maker</p>
           </div>
         </div>
+
       </div>
     </div>
   </body>
